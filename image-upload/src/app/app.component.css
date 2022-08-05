@@ -1,0 +1,47 @@
+p {
+    font-family: Lato;
+  }
+
+  #container {
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main-axis vertical */
+    justify-content: center; /* align items vertically, in this case */
+    align-items: center; /* align items horizontally, in this case */
+    height: 300px; /* for demo purposes */
+
+}
+  .dropzone {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+    width: 500px; 
+    background-color: #eee;
+    border: dotted 1px #aaa;
+      
+  }
+  
+  .text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .centered {
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align:center;
+  }
+  input{
+    display: none;
+  }
+  label{
+    cursor: pointer;
+}
+.fileSelectZone{
+    height: 50px;
+    width: 500px;
+    background-color: #eee;
+    border: dotted 1px #aaa;
+ 
+}

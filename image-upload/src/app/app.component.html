@@ -1,0 +1,20 @@
+
+<div id="container">
+  <div *ngIf="!files.length" class="col-12 rmpm dropzone" appDrag (files)="filesDropped($event)">
+    <div class="text-wrapper">
+      <div class="centered">Drag and Drop an inage here!</div>
+    </div>
+  </div>
+  <p class="centered">OR</p>
+  <div *ngIf="!files.length" class="fileSelectZone centered">
+    <label for="inputTag">
+      Select an Image from your computer
+      <input id="inputTag" type="file"  (change)="onImageUpload($event)"/>
+    </label>
+  </div>
+ 
+  <!--droped/selected image preview-->
+  <div *ngFor="let file of files">
+    <img *ngIf="file" [src]="file.url" width="500px" height="400px">
+  </div>
+</div>
